@@ -1,0 +1,328 @@
+
+@import './colors.scss';
+
+body {
+    background-color: $black;
+    color: $white;
+
+    .container-fluid {
+        padding: 0 !important;
+        .navbar-brand {margin: 3rem;}
+        .navbar.navbar-expand-lg {
+            padding: 0;
+            .nav-container {
+                width: 100%;
+                .navbar-nav {
+                    padding: 2rem;
+                    .nav-item {
+                        padding-right: 60px;
+                        &:first-child {padding-left: 72px;}
+                        &:last-child {padding-right: 104px;}
+                        a {color: $white;}
+
+                        .menu-arr {
+                            
+                            position: absolute;
+                            transition: transform 0.4s ease-out;
+                            
+
+                            &.rotate {
+                                transform: rotate(450deg) ;
+                                // top: 10px;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            background-color: $black;
+                            border: 1px solid $white;
+                            li {
+                                &:first-child {
+                                    border-bottom: 1px solid $white;
+                                }
+                                &:nth-child(2) {
+                                    border-bottom: 1px solid $white;
+                                }
+                                &:hover {
+                                    a {
+                                        transition: all 0.2s ease-out;
+                                        background-color: $white;
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #gold_bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            img {
+                width: 350px;
+                height: auto;
+            }
+        }
+        .motor-container {
+            position: relative;
+            width: 100%;
+            .motor-bg{
+                position: relative;
+                overflow: hidden;
+                background-color: $black;
+                .motor {
+                    z-index: 10;
+                    position: relative;
+                    .circle-logo {
+                        position: absolute;
+                        z-index: 10;
+                        top: 10px;
+                        right: 0px;
+                        animation-name: spinlogo;
+                        animation-duration: 1s;
+
+                        @keyframes spinlogo {
+                            from {
+                                transform: rotate(0);
+                            }
+                            to {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    .slider-row {
+                        // position: relative;
+                        img.slider {
+                            width: 100%;
+                            min-height: 300px;
+                            position: absolute;
+                            transition: all 1s ease-in;
+                            left: -100%;
+                            &.nxt {
+                                left: 100%;
+                            }
+                            &.prev {
+                                left: 0;
+                            }
+                            &.active {
+                                left: 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .motor-bg2 {
+                position: relative;
+                top: -120px;
+                overflow: hidden;
+                z-index: 50;
+            }
+        }
+    }
+}
+
+.sidebar {
+    position: relative;
+    // top: 202px;
+    z-index: 1000;
+    ul {
+        height: 100%;
+        list-style-type: none;
+        background-color: $black;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.navigate {
+    .icons {
+        width: 70px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 1rem !important;
+        font-weight: bold;
+        z-index: 200;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .line-container {
+        overflow: hidden;
+        #line {
+            position: relative;
+            width: 280px;
+            height: 3px;
+            background-color: $white;
+    
+            #innerLine {
+                width: 280px;
+                height: 3px;
+                position: absolute;
+                top: 0;
+                background-color: orange;
+                transition: all 0.5s ease-out;
+
+                &.pcnt1 {
+                    left: -252px;
+                }
+                &.pcnt2 {
+                    left: -224px;
+                }
+                &.pcnt3 {
+                    left: -196px;
+                }
+                &.pcnt4 {
+                    left: -168px;
+                }
+                &.pcnt5 {
+                    left: -140px;
+                }
+                &.pcnt6 {
+                    left: -112px;
+                }
+                &.pcnt7 {
+                    left: -84px;
+                }
+                &.pcnt8 {
+                    left: -56px;
+                }
+                &.pcnt9 {
+                    left: -28px;
+                }
+                &.pcnt10 {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+#bike-txt {
+    font-weight: 100 !important;
+    font-size: 12px;
+}
+
+@media (min-width: 1602px) {
+    #gold_bg {
+        img {
+            width: 500px !important;
+            height: 300px !important;
+        }
+    }
+
+    .sidbar {
+        ul {
+            img {
+                height: 25%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1367px) {
+    // .motor {
+    //     overflow: hidden;
+    // }
+}
+
+@media (max-width: 1366px) {
+    .motor-bg {
+        .motor:nth-child(2) {
+            visibility: hidden;
+        }
+    }
+
+    .motor-bg3 {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    #gold_bg {
+        img {
+            display: none;
+        }
+    }
+
+    .sidebar {
+        top: 0 !important;
+    }
+
+    .motor {
+        position: relative;
+    }
+}
+
+@media (min-width: 1025px) {
+    
+}
+
+@media (max-width: 1024px) {
+    .nav-item {
+        flex: 1 1 auto!important;
+    }
+
+    .circle-logo {
+        left: calc(50% - 92px);
+        top: 20% !important;
+    }
+
+    .motor-container {
+        .motor-bg2 {
+            display: none;
+        }
+
+        .bottom-nav {
+            margin-top: -200px !important;
+        }
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .sidebar {
+        ul {
+            display: flex;
+            overflow: scroll;
+            li {
+                flex: 1 1 auto;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .bottom-nav {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-container {
+        .navbar-nav {
+            overflow: scroll !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            .nav-item {
+                padding-left: 10px !important;
+                padding-right: 30px !important;
+            }
+        }
+    }
+
+    .motor-bg2 {
+        max-height: 300px !important;
+    }
+
+    .lift-margin {
+        margin-top: -200px;
+    }
+}

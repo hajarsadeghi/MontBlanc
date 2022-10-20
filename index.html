@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="dist/main.css">
+        <title>Prototype</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="d-none d-xl-block navbar-brand" href="#">
+                    <img src="src/image/logo.png">
+                  </a>
+                  <div class="nav-container">
+                    <ul class="navbar-nav my-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#" role="button">
+                            <img class="menu-img" src="src/image/BIKES.png">
+                            <label class="menu-arr px-2">></label>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="menu-img" src="src/image/ACCESSORIES.png">
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="menu-img" src="src/image/NEW TECH.png">
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="menu-img" src="src/image/EXPLORE.png">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-12 col-xl-10">
+                    <div class="motor-container">
+                        <div class="row motor-bg">
+                            <div class="col-12 col-xxl-10 px-0 motor">
+                                <div class="slider-row">
+                                    <img id="slide1" class="slider active" src="src/image/1.gif" title="Motor 1">
+                                    <img id="slide2" class="slider" src="src/image/3.jpg" title="Motor 2">
+                                    <img id="slide3" class="slider" src="src/image/4.jpg" title="Motor 3">
+                                    <img id="slide4" class="slider" src="src/image/5.jpg" title="Motor 4">
+                                    <img id="slide5" class="slider" src="src/image/6.gif" title="Motor 5">
+                                    <img id="slide6" class="slider" src="src/image/7.jpg" title="Motor 6">
+                                    <img id="slide7" class="slider" src="src/image/8.gif" title="Motor 7">
+                                    <img id="slide8" class="slider" src="src/image/9.jpg" title="Motor 8">
+                                    <img id="slide9" class="slider" src="src/image/10.gif" title="Motor 9">
+                                    <img id="slide10" class="slider" src="src/image/12.jpg" title="Motor 10">
+                                </div>
+                                <img class="circle-logo" src="src/image/MONTBLANC MOTORCYCLE.png">
+                            </div>
+                            <div class="col-0 col-xxl-2 px-0 motor">
+                                <img src="src/image/photo 2.png" title="Motor 2">
+                            </div>
+                        </div>
+                        <div class="motor-bg2">
+                            <img src="src/image/VECTOR.png" title="Motor Text">
+                        </div>
+                        <div class="row bottom-nav" style="margin-top: -100px;">
+                            <div class="col-12 col-xxl-8" style=" z-index: 1000;">
+                                <div class="lift-margin row">
+                                    <div class="col-12 col-xl d-flex justify-content-center align-items-center">
+                                        <div class="navigate d-flex align-items-center px-2">
+                                            <div class="icons">
+                                                <div class="icon" id="prev" active="1">
+                                                    <
+                                                    <label class="slide-num mx-1">1</label>
+                                                </div>
+                                            </div>
+                                            <div style="z-index: 100;">
+                                                <div class="mx-3 line-container">
+                                                    <div id="line">
+                                                        <div class="pcnt1" id="innerLine"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="icons">
+                                                <div class="icon" id="nxt">
+                                                    <label class="slide-num mx-1">10</label>
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl px-5">
+                                        <p class="mx-3" id="bike-txt">
+                                            The bike comes in all black, with a relatively modern appeal. Chrome accents in just the right places make the bike stand out, while the black on black satin text on the bike's fork-guards helps hightlight the company's branding without being too direct or obvious.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 motor-bg3">
+                                <img src="src/image/photo 3.png" title="Motor Handle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-lg-none">
+                    <div class="sidebar bottom-nav">
+                        <ul class="p-0">
+                            <li>
+                                <img src="src/image/TOP SPEED.png">
+                            </li>
+                            <li>
+                                <img src="src/image/POWER.png">  
+                            </li>
+                            <li>
+                                <img src="src/image/TORQUE.png">
+                            </li>
+                            <li>
+                                <img src="src/image/FUEL CAPACITY.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2 d-none d-lg-block" style="padding-left: 0 !important; padding-right: 0 !important;">
+                    <div class="d-flex flex-column">
+                        <div id="gold_bg">
+                            <img src="src/image/Gold.png">
+                        </div>
+                        <div class="sidebar">
+                            <ul class="p-0">
+                                <li>
+                                    <img src="src/image/TOP SPEED.png">
+                                </li>
+                                <li>
+                                    <img src="src/image/POWER.png">  
+                                </li>
+                                <li>
+                                    <img src="src/image/TORQUE.png">
+                                </li>
+                                <li>
+                                    <img src="src/image/FUEL CAPACITY.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Load js files -->
+        <script text="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script text="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script text="text/javascript" src="src/js/main.js"></script>
+    </body>
+</html>
